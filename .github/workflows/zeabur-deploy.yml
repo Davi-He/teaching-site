@@ -1,0 +1,18 @@
+name: Deploy to Zeabur
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Deploy to Zeabur
+        run: |
+          curl -X POST "https://api.zeabur.com/graphql" \
+            -H "Authorization: Bearer ${{ secrets.ZEABUR_API_KEY }}" \
+            -H "Content-Type: application/json" \
+            -d '{"query":"mutation{triggerGitDeployment(repoUrl:\"https://github.com/Davi-He/teaching-site.git\"){success}}"}'

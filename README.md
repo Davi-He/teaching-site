@@ -10,33 +10,26 @@
 - **🎨 现代 UI**: 基于 Tailwind CSS 的美观界面
 - **📱 响应式设计**: 支持手机、平板、电脑
 
-## 🚀 部署到 Zeabur
+## 🚀 一键部署到 Zeabur
 
-### 方法一：通过 GitHub 部署（推荐）
+### 方法一：一键部署（最简单）
 
-1. **将代码推送到 GitHub**
-   ```bash
-   cd teaching-site
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin <你的 GitHub 仓库地址>
-   git push -u origin main
-   ```
+点击以下按钮直接部署：
 
-2. **在 Zeabur 部署**
+[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/deploy?repoUrl=https://github.com/Davi-He/teaching-site)
+
+### 方法二：手动部署
+
+1. **在 Zeabur 部署**
    - 访问 https://zeabur.cn/
    - 登录你的账号
-   - 点击「新建项目」
-   - 选择「从 GitHub 导入」
-   - 选择 `teaching-site` 仓库
+   - 点击「新建项目」→「从 GitHub 导入」
+   - 选择 `Davi-He/teaching-site` 仓库
    - Zeabur 会自动识别 Next.js 项目
    - 点击「部署」
 
-3. **获取访问地址**
+2. **获取访问地址**
    - 部署完成后，Zeabur 会提供一个 `*.zeabur.app` 的域名
-   - 你也可以绑定自定义域名
 
 ### 方法二：本地部署测试
 
